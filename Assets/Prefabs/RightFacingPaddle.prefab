@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightFacingPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 3689200501137479365, guid: a33b0380a620d45439939e3f38a8f498, type: 3}
+      propertyPath: m_TagString
+      value: RightPaddle
+      objectReference: {fileID: 0}
     - target: {fileID: 3689200501561749931, guid: a33b0380a620d45439939e3f38a8f498, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -1.6184217

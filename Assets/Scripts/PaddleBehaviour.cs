@@ -11,7 +11,14 @@ public class PaddleBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TriggerPaddle(Keyboard.current.spaceKey.isPressed);
+        if (gameObject.tag == "LeftPaddle")
+        {
+            TriggerPaddle(Keyboard.current.aKey.isPressed);
+        } else if (gameObject.tag == "RightPaddle")
+        {
+            TriggerPaddle(Keyboard.current.dKey.isPressed);
+        }
+        
     }
 
     public void TriggerPaddle(bool isPressed)
