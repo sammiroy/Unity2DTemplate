@@ -6,6 +6,9 @@ TagManager:
   tags:
   - LeftPaddle
   - RightPaddle
+  - Fatal
+  - Slingshot
+  - Bumper
   layers:
   - Default
   - TransparentFX
