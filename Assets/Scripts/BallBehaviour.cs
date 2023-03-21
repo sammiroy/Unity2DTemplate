@@ -30,22 +30,23 @@ public class BallBehaviour : MonoBehaviour
         //Debug.Log(spawnPoint);
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            ResetBallPosition(Camera.main.ScreenToWorldPoint(Mouse.current.position.value));
+            //ResetBallPosition(Camera.main.ScreenToWorldPoint(Mouse.current.position.value));
         }
     }
 
-    public void ResetBallPosition(Vector2 pos)
+    public void ResetBallPosition()
     {
-        rb.transform.position = pos;
+        rb.transform.position = spawn;
         rb.velocity = Vector2.zero;
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Fatal")
         {
             lives--;
-            ResetBallPosition(spawn);
+            ResetBallPosition();
         }
     }
 
@@ -61,7 +62,7 @@ public class BallBehaviour : MonoBehaviour
         }
         if(collision.collider.tag == "Slingshot")
         {
-            points++;
+            points += 5;
             Debug.Log(collision.collider.tag);
         }
     }
