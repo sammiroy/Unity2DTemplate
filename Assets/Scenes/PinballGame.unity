@@ -1436,6 +1436,7 @@ GameObject:
   - component: {fileID: 754718314}
   - component: {fileID: 754718313}
   - component: {fileID: 754718312}
+  - component: {fileID: 754718316}
   m_Layer: 5
   m_Name: ScoreUI
   m_TagString: Untagged
@@ -1527,6 +1528,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &754718316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754718311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c8362064cc7dc4c89de5ade7aa1ed8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!231 &870757351 stripped
 SpringJoint2D:
   m_CorrespondingSourceObject: {fileID: 8908767007234782246, guid: 155e37f814430c646872fc7307b243fa, type: 3}
@@ -1566,6 +1579,66 @@ Transform:
   - {fileID: 636662794}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &928935009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 928935012}
+  - component: {fileID: 928935011}
+  - component: {fileID: 928935010}
+  m_Layer: 0
+  m_Name: GameState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &928935010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928935009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd709c23f68e5349ab9c3166b62554d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &928935011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928935009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5178108a0fc337943a01c1e93b8eb69b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSaveManager: {fileID: 0}
+  score: 0
+  hiScore: 0
+--- !u!4 &928935012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928935009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 166.23189, y: 86.43909, z: -0.010691233}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &969998187
 GameObject:
@@ -3851,6 +3924,10 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 556296394}
+    - target: {fileID: 4313799975820411575, guid: 2d11b268f4f01e2418c3bd985ded2291, type: 3}
+      propertyPath: gameSaveManager
+      value: 
+      objectReference: {fileID: 754718316}
     - target: {fileID: 4313799975820411582, guid: 2d11b268f4f01e2418c3bd985ded2291, type: 3}
       propertyPath: m_Name
       value: Ball

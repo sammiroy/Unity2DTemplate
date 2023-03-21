@@ -9,6 +9,7 @@ TagManager:
   - Fatal
   - Slingshot
   - Bumper
+  - GameState
   layers:
   - Default
   - TransparentFX

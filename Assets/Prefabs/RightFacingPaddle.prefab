@@ -77,15 +77,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3689200501561749931, guid: a33b0380a620d45439939e3f38a8f498, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -1.6184217
+      value: -1.6184219
       objectReference: {fileID: 0}
     - target: {fileID: 3689200501561749931, guid: a33b0380a620d45439939e3f38a8f498, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.00006251865
+      value: -0.00006210657
       objectReference: {fileID: 0}
     - target: {fileID: 3689200501561749931, guid: a33b0380a620d45439939e3f38a8f498, type: 3}
       propertyPath: m_Motor.m_MotorSpeed
-      value: -1000
+      value: -2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a33b0380a620d45439939e3f38a8f498, type: 3}

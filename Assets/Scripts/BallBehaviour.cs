@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class BallBehaviour : MonoBehaviour
 {
+    [SerializeField] GameSaveManager gameSaveManager;
     Vector2 spawn;
     Rigidbody2D rb;
     public int lives;
@@ -25,6 +26,7 @@ public class BallBehaviour : MonoBehaviour
     {
         if (lives <= 0)
         {
+            gameSaveManager.SaveToDisk();
             Camera.main.GetComponent<SceneHandler>().LoadGameOverScreen();
         }
         //Debug.Log(spawnPoint);
@@ -59,6 +61,7 @@ public class BallBehaviour : MonoBehaviour
         {
             Debug.Log(collision.collider.tag);
             points++;
+            //GameTester.
         }
         if(collision.collider.tag == "Slingshot")
         {
